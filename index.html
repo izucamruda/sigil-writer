@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Генератор сигилов · Орден</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sigillum Verbi</h1>
+  <div class="subtitle">Генератор сигилов · Матрица Ордена</div>
+</header>
+
+<div class="layout">
+  <section class="panel">
+    <div class="field">
+      <label for="wordInput">Слово</label>
+      <input id="wordInput" type="text" placeholder="Род, Егор, Шура…" autocomplete="off">
+    </div>
+
+    <div class="field">
+      <label for="greekInput">Греческое слово (можно править)</label>
+      <input id="greekInput" type="text" placeholder="ῥόδ" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div class="checkboxes">
+      <label><input type="checkbox" id="optKipos"> Кипос (защита)</label>
+      <label><input type="checkbox" id="optPerst"> Персть (основание)</label>
+      <label><input type="checkbox" id="optRod"> Род (средоточие)</label>
+    </div>
+
+    <div class="button-row">
+      <button id="btnBuild">Построить сигил</button>
+      <button id="btnSave">Сохранить в книгу</button>
+      <button id="btnDownload">Скачать SVG</button>
+    </div>
+
+    <div class="readout" id="readout">—</div>
+  </section>
+
+  <section class="panel">
+    <svg id="sigilSvg" class="sigil" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg"></svg>
+  </section>
+</div>
+
+<section class="grimoire">
+  <h2>Книга сигилов</h2>
+  <div id="grimoireList" class="grimoire-list"></div>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/isopsephy.js"></script>
+<script src="js/anchors.js"></script>
+<script src="js/render.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
