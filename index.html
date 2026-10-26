@@ -21,11 +21,16 @@
     <div class="field">
       <label for="wordInput">Слово</label>
       <input id="wordInput" type="text" placeholder="Род, Егор, Шура…" autocomplete="off">
+      <div id="examples" class="examples"></div>
     </div>
 
     <div class="field">
       <label for="greekInput">Греческое слово (можно править)</label>
       <input id="greekInput" type="text" placeholder="ῥόδ" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div class="checkboxes">
+      <label><input type="checkbox" id="optSpread" checked> Разнесённые якоря</label>
     </div>
 
     <div class="checkboxes">
@@ -53,6 +58,7 @@
   <div id="grimoireList" class="grimoire-list"></div>
 </section>
 
+<script src="data/words.js"></script>
 <script src="js/config.js"></script>
 <script src="js/isopsephy.js"></script>
 <script src="js/anchors.js"></script>
