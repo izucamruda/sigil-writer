@@ -208,3 +208,6 @@ svg.sigil {
 .entry .meta { color: var(--ink-dim); font-size: 0.85rem; }
 .entry button { padding: 0.3rem 0.6rem; font-size: 0.65rem; }
 .empty-note { color: var(--ink-dim); text-align: center; font-style: italic; }
+
+/* отступ между строкой «Разнесённые якоря» и слоями */
+.checkboxes + .checkboxes { margin-top: 0.2rem; }
